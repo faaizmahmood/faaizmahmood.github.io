@@ -149,6 +149,11 @@ body {
     justify-content: center;
 }
 
+.My-image img{
+    border-radius: 50%;
+    width: 13% !important;
+}
+
 .hero-content h1 {
     color: #FFF;
     font-size: 70px;
