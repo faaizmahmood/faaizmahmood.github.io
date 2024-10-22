@@ -44,6 +44,10 @@ button{
     transition: all 0.5s !important;
 }
 
+button:hover{
+    transform: scale(1.05);
+}
+
 @media (max-width:768px) {
     .image {
         width: 100%;
@@ -87,6 +91,11 @@ button{
 .main-menue li a {
     color: #E3E4E6 !important;
     font-weight: 14px;
+    transition: all 0.3s !important;
+}
+
+.main-menue li a:hover{
+    transform: scale(1.1);
 }
 
 .main-menue i{
