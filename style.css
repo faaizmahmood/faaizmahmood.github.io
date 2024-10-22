@@ -31,7 +31,6 @@ body {
 }
 
 
-
 .gray-color {
     color: rgba(227, 228, 230, 0.55)
 }
@@ -39,6 +38,10 @@ body {
 .image-about{
     text-align: end;
     width: 90%;
+}
+
+button{
+    transition: all 0.5s !important;
 }
 
 @media (max-width:768px) {
@@ -538,6 +541,11 @@ button:hover .color-change {
     margin: 0px 15px;
 }
 
+.portfolio-item img,
+.portfolio-item-3 img{
+    border-radius: 15px !important;
+}
+
 
 @media (max-width:992px) {
     .ToReverse {
@@ -810,13 +818,13 @@ button:hover .color-change {
 .footer-icons .icon {
     font-size: 48px;
     margin: 0px 50px;
-    transition: all 0.2s;
+    transition: all 0.5s;
     cursor: pointer;
 }
 
 .footer-icons .icon:hover {
-    font-size: 58px;
     color: white;
+    transform: scale(1.2);
 }
 
 
