@@ -35,16 +35,16 @@ body {
     color: rgba(227, 228, 230, 0.55)
 }
 
-.image-about{
+.image-about {
     text-align: end;
     width: 90%;
 }
 
-button{
+button {
     transition: all 0.5s !important;
 }
 
-button:hover{
+button:hover {
     transform: scale(1.05);
 }
 
@@ -59,6 +59,43 @@ button:hover{
 
 }
 
+
+/* Pre-loader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #010208;
+}
+
+
+.spin-logo {
+    animation: spinReverse 2s ease-in-out infinite;
+}
+
+@keyframes spinReverse {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Pre-loader */
 
 /* ---------------------------------
 ------------------------navbar*/
@@ -94,21 +131,21 @@ button:hover{
     transition: all 0.3s !important;
 }
 
-.main-menue li a:hover{
+.main-menue li a:hover {
     transform: scale(1.1);
 }
 
-.main-menue i{
-   text-align: center;
-   color: white;
-   display: flex;
-   justify-content: center;
-   margin-top: -10px;
+.main-menue i {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
 }
 
 
 @media (max-width:768px) {
-    .main-menue i{
+    .main-menue i {
         display: none;
     }
 }
@@ -161,7 +198,7 @@ button:hover{
     justify-content: center;
 }
 
-.My-image img{
+.My-image img {
     border-radius: 50%;
     width: 13% !important;
 }
@@ -173,7 +210,7 @@ button:hover{
     font-weight: 600;
 }
 
-.banner-heading-for-small-devices{
+.banner-heading-for-small-devices {
     display: none;
 }
 
@@ -221,16 +258,17 @@ button:hover .color-change {
     -webkit-text-fill-color: transparent;
 }
 
-.simple-btn:hover{
-    background-image:linear-gradient(270deg, #ffffff 22.28%, #ffffff 59.73%, #ffffff 88.34%) ;
+.simple-btn:hover {
+    background-image: linear-gradient(270deg, #ffffff 22.28%, #ffffff 59.73%, #ffffff 88.34%);
     color: #010208 !important;
 }
 
-.simple-btn a{
-  color: white;
+.simple-btn a {
+    color: white;
 }
-.simple-btn:hover a{
-  color:#010208;
+
+.simple-btn:hover a {
+    color: #010208;
 }
 
 .hamburger-nav-icon {
@@ -271,12 +309,14 @@ button:hover .color-change {
     .hero-btns {
         display: block;
     }
-    .banner-heading-for-small-devices{
+
+    .banner-heading-for-small-devices {
         display: block;
     }
-  .banner-heading-for-large-devices{
-    display: none;
-  }
+
+    .banner-heading-for-large-devices {
+        display: none;
+    }
 }
 
 /* ---------------------------------
@@ -437,7 +477,7 @@ button:hover .color-change {
     .about-section {
         margin-top: 70px;
     }
-    
+
     .sub-section-main-content-type-2 h2 {
         display: none;
     }
@@ -551,7 +591,7 @@ button:hover .color-change {
 }
 
 .portfolio-item img,
-.portfolio-item-3 img{
+.portfolio-item-3 img {
     border-radius: 15px !important;
 }
 
@@ -565,14 +605,15 @@ button:hover .color-change {
 
 @media (max-width:576px) {
 
-    .portfolio-section h1{
+    .portfolio-section h1 {
         font-size: 24px;
     }
 
     .portfolio-section {
         margin-top: 40px;
-    
+
     }
+
     .portfolio-section p {
         font-size: 18px;
         line-height: 120%;
@@ -581,11 +622,13 @@ button:hover .color-change {
     .portfolio-link button {
         width: 280px;
     }
-    .sub-section-main-content-type-3{
+
+    .sub-section-main-content-type-3 {
         margin-top: -40px !important;
     }
-    .portfolio-item-1 .sub-section-main-content-type-3{
-    margin-top: -80px !important;
+
+    .portfolio-item-1 .sub-section-main-content-type-3 {
+        margin-top: -80px !important;
     }
 }
 
@@ -600,7 +643,7 @@ button:hover .color-change {
 ----------------------TESTIMONIAL section emd */
 
 
-#carasoul-for-mobile-devices{
+#carasoul-for-mobile-devices {
     display: none;
 }
 
@@ -647,7 +690,7 @@ button:hover .color-change {
     align-items: center;
 }
 
-.test-box .test-content{
+.test-box .test-content {
     min-height: 300px;
 }
 
@@ -695,17 +738,18 @@ button:hover .color-change {
         width: 100%;
     }
 
-    #carasoul-for-mobile-devices{
+    #carasoul-for-mobile-devices {
         display: block;
     }
-    #carasoul-for-larger-devices{
+
+    #carasoul-for-larger-devices {
         display: none !important;
     }
 
     .owl-theme .owl-dots {
-    display: block !important;
-    margin-top: 20px;
-}
+        display: block !important;
+        margin-top: 20px;
+    }
 
 }
 
@@ -820,7 +864,7 @@ button:hover .color-change {
 
 }
 
-.footer-icons a{
+.footer-icons a {
     color: rgb(125, 126, 130);
 }
 

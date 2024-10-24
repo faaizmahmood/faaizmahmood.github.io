@@ -82,3 +82,30 @@ $(' #carasoul-for-mobile-devices .owl-carousel').owlCarousel({
       }
   }
 })
+
+
+// ================================= Pre-Loader
+
+window.addEventListener("load", function() {
+
+  const preloader = document.getElementById("preloader");
+
+  const content = document.getElementById("content");
+
+  const minLoadingTime = 2000;
+
+  const startTime = new Date().getTime();
+
+  const loadTime = new Date().getTime() - startTime;
+
+ if (loadTime < minLoadingTime) {
+    setTimeout(() => {
+      preloader.style.display = "none";
+      content.style.display = "block";
+    }, minLoadingTime - loadTime);
+  } else {
+    preloader.style.display = "none";
+    content.style.display = "block";
+  }
+  
+});
