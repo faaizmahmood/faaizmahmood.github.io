@@ -85,7 +85,7 @@ console.log(data);
 
 // Update timeOnPage and scrollDepth before user leaves
 window.addEventListener('beforeunload', () => {
-  data.timeOnPage = Math.floor((Date.now() - sessionStart) / 1000); // Time in seconds
+  data.timeOnPage = Math.floor((Date.now() - sessionStart) / 1000);
   data.scrollDepth = getScrollDepth();
   sendDataToBackend(data);
 });
