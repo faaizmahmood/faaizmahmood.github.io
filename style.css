@@ -80,6 +80,7 @@ button:hover {
 
 .spin-logo {
     animation: spinReverse 2s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
 }
 
 @keyframes spinReverse {
