@@ -86,26 +86,27 @@ $(' #carasoul-for-mobile-devices .owl-carousel').owlCarousel({
 
 // ================================= Pre-Loader
 
-window.addEventListener("load", function() {
-
+window.addEventListener("load", function () {
   const preloader = document.getElementById("preloader");
-
   const content = document.getElementById("content");
 
   const minLoadingTime = 2000;
-
   const startTime = new Date().getTime();
-
   const loadTime = new Date().getTime() - startTime;
 
- if (loadTime < minLoadingTime) {
+  if (loadTime < minLoadingTime) {
+    setTimeout(() => {
+      preloader.classList.add("fade-out");
+      setTimeout(() => {
+        preloader.style.display = "none";
+        content.style.display = "block";
+      }, 1300); // Matches the fade-out animation duration
+    }, minLoadingTime - loadTime);
+  } else {
+    preloader.classList.add("fade-out");
     setTimeout(() => {
       preloader.style.display = "none";
       content.style.display = "block";
-    }, minLoadingTime - loadTime);
-  } else {
-    preloader.style.display = "none";
-    content.style.display = "block";
+    }, 1300);
   }
-  
 });
