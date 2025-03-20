@@ -5,6 +5,7 @@
 /* font family */
 
 
+/* Initial styles */
 * {
     margin: 0;
     padding: 0;
@@ -20,24 +21,24 @@ body {
 /* Keyframes for fade-in animation */
 @keyframes fadeIn {
     from {
-        opacity: 0;
+        opacity: 0.6;
     }
-
     to {
         opacity: 1;
     }
 }
 
-/* If you want the exit effect, you will need to apply another class dynamically */
+/* Preloader fade-out effect */
 .fade-out {
     animation: fadeOut 1.3s ease-in-out;
+    opacity: 0;
+    pointer-events: none; /* Prevents interaction */
 }
 
 @keyframes fadeOut {
     from {
         opacity: 1;
     }
-
     to {
         opacity: 0;
     }
