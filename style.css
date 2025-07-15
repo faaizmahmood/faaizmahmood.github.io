@@ -235,7 +235,7 @@ button:hover {
 
 .hero-content h1 {
     color: #FFF;
-    font-size: 70px;
+    font-size: 64px;
     font-style: normal;
     font-weight: 600;
 }
@@ -324,7 +324,9 @@ button:hover .color-change {
 
 @media (max-width:576px) {
     .hero-content h1 {
+        margin-top: 20px;
         font-size: 30px;
+        line-height: 40px;
     }
 
     .hero-content p {
